@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1>To-Do List</h1>
+      <form class="form" id="form">
+        <input type="text" placeholder="Add task..." id="task-input">
+        <select id="status-select">
+          <option value="priority">Priority</option>
+          <option value="todo">To-Do</option>
+          <option value="done">Done</option>
+        </select>
+        <select id="priority-select">
+          <option value="low">Low priority</option>
+          <option value="medium">Medium priority</option>
+          <option value="high">High priority</option>
+        </select>
+        <button onclick="addTask(event)" type="submit">Add</button>
+      </form>
+      <div class="columns">
+        <div class="column" id="priority">
+          <h2>Priority</h2>
+          <ul></ul>
+        </div>
+        <div class="column" id="todo">
+          <h2>To-Do</h2>
+          <ul></ul>
+        </div>
+        <div class="column" id="done">
+          <h2>Done</h2>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

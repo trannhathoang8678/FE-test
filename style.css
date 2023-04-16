@@ -1,0 +1,152 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  margin-left: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  width: 30%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+li:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+li .task {
+  flex-grow: 1;
+}
+
+li .priority {
+  margin-right: 10px;
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.low {
+  color: #39ac73;
+  background-color: #d1f7c4;
+}
+
+.medium {
+  color: #f6c23e;
+}
+
+.high {
+  color: #e74c3c;
+  background-color: #f9d6d5;
+}
+
+.completed {
+  color: #6c757d;
+  background-color: #f5f5f5;
+  text-decoration: line-through;
+  cursor: default;
+}
+
+.completed .priority {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
